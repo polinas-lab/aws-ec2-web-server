@@ -177,11 +177,9 @@ The screenshot below shows the HTML file being created and added to the server.
 
 The HTML file used in this project can be found here:
 
-```text
-website/index.html
-```
+[View index.html](website/index.html)
 
-### What I Learned
+What I Learned
 
 * Web servers require content to serve.
 * Apache automatically serves files located in its web root directory.
