@@ -1,8 +1,8 @@
-Project Journey
+<h1><b>Project Journey</b></h1>
 
-AWS EC2 Web Server Project
+<h2>AWS EC2 Web Server Project</h2>
 
-Why I Started This Project
+<h2>Why I Started This Project</h2>
 
 After completing my first AWS project on Amazon S3 Static Website Hosting and my second project on AWS IAM User Management, I wanted to move beyond storage and security and explore the compute side of cloud computing.
 
@@ -19,7 +19,7 @@ To answer these questions, I decided to build my first web server using Amazon E
 
 ---
 
-Project Objective
+<h2>Project Objective</h2>
 
 The goal of this project was to:
 
@@ -33,7 +33,7 @@ The goal of this project was to:
 
 ---
 
-Step 1: Selecting Amazon Linux
+<h3>Step 1: Selecting Amazon Linux</h3>
 
 The first step was choosing an operating system for the EC2 instance.
 
@@ -41,13 +41,13 @@ I selected **Amazon Linux 2023**, an AWS-optimized Linux distribution commonly u
 
 Since this was my first cloud server, I wanted to use an operating system designed specifically for AWS workloads and widely used in production environments.
 
-Amazon Linux Selection
+<b>Amazon Linux Selection</b>
 
 The screenshot below shows the Amazon Linux operating system selected during instance creation.
 
 ![Amazon Linux Selected](EC2-screenshots/amazon-linux-selected.png)
 
-What I Learned
+<h2>What I Learned</h2>
 
 * EC2 instances require an operating system.
 * Amazon Linux is optimized for AWS.
@@ -55,7 +55,7 @@ What I Learned
 
 ---
 
-Step 2: Launching the EC2 Instance
+<h3>Step 2: Launching the EC2 Instance</h3>
 
 After selecting the operating system, I launched my first EC2 instance.
 
@@ -63,19 +63,19 @@ An EC2 instance is essentially a virtual machine running in the cloud. It provid
 
 Unlike Amazon S3, which is fully managed, EC2 gives users complete control over the operating system and software installed on the server.
 
-EC2 Instance Running
+<b>EC2 Instance Running</b>
 
 The screenshot below shows my EC2 instance successfully launched and running.
 
 ![EC2 Running](EC2-screenshots/instance-running.png)
 
-Why This Matters
+<h2>Why This Matters</h2>
 
 Launching an EC2 instance is one of the most fundamental tasks in AWS because applications, APIs, databases, and websites often run on cloud servers.
 
 ---
 
-Step 3: Configuring Network Security
+<h3>Step 3: Configuring Network Security</h3>
 
 Before accessing the server, I needed to configure Security Groups.
 
@@ -88,13 +88,13 @@ I configured:
 
 SSH access was restricted to my own IP address while HTTP traffic was allowed so visitors could access the website.
 
-Security Group Configuration
+<b>Security Group Configuration</b>
 
 The screenshot below shows the Security Group and networking configuration.
 
-![Network Settings](EC2-screenshots/network&sec_settings.png)
+![Network Settings](EC2-screenshots/network\&sec_settings.png)
 
-What I Learned
+<h2>What I Learned</h2>
 
 * Security Groups function as virtual firewalls.
 * Network access should follow security best practices.
@@ -102,7 +102,7 @@ What I Learned
 
 ---
 
-Step 4: Connecting to the Server Using SSH
+<h3>Step 4: Connecting to the Server Using SSH</h3>
 
 After launching the server, I connected to it remotely from my Windows machine using SSH and the PEM key pair generated during instance creation.
 
@@ -110,19 +110,19 @@ SSH (Secure Shell) is a secure protocol used by cloud engineers and system admin
 
 This was my first experience directly interacting with a Linux server hosted in the cloud.
 
-SSH Connection Established
+<b>SSH Connection Established</b>
 
 The screenshot below shows the successful SSH connection to the EC2 instance.
 
 ![SSH Connected](EC2-screenshots/ssh-connected.png)
 
-Why This Matters
+<h2>Why This Matters</h2>
 
 SSH is one of the most widely used tools in cloud computing because it allows administrators to securely manage infrastructure from anywhere.
 
 ---
 
-Step 5: Installing Apache Web Server
+<h3>Step 5: Installing Apache Web Server</h3>
 
 Once connected to the server, I installed Apache HTTP Server.
 
@@ -130,13 +130,13 @@ Apache is responsible for receiving browser requests and serving website content
 
 After installation, I started the Apache service and configured it to start automatically whenever the server reboots.
 
-### Apache Installation and Status
+<h2>Apache Installation and Status</h2>
 
 The screenshot below shows Apache successfully installed and running.
 
 ![Apache Running](EC2-screenshots/apache-running.png)
 
-Commands Used
+<b>Commands Used</b>
 
 ```bash
 sudo yum install httpd -y
@@ -145,7 +145,7 @@ sudo systemctl enable httpd
 sudo systemctl status httpd
 ```
 
-What I Learned
+<h2>What I Learned</h2>
 
 * Apache is a web server application.
 * Services can be managed using Linux commands.
@@ -153,7 +153,7 @@ What I Learned
 
 ---
 
-Step 6: Creating and Deploying the Website
+<h3>Step 6: Creating and Deploying the Website</h3>
 
 With Apache running, the next step was to create a website.
 
@@ -167,19 +167,19 @@ Any file placed in this directory can be served to visitors through the web serv
 
 This step transformed the EC2 instance from a Linux server into a functioning web server.
 
-### HTML File Created
+<h2>HTML File Created</h2>
 
 The screenshot below shows the HTML file being created and added to the server.
 
 ![HTML Added](EC2-screenshots/html_web_added.png)
 
-### Website Source Code
+<h2>Website Source Code</h2>
 
 The HTML file used in this project can be found here:
 
 [View index.html](website/index.html)
 
-What I Learned
+<h2>What I Learned</h2>
 
 * Web servers require content to serve.
 * Apache automatically serves files located in its web root directory.
@@ -187,7 +187,7 @@ What I Learned
 
 ---
 
-Step 7: Accessing the Website
+<h3>Step 7: Accessing the Website</h3>
 
 After configuring Apache and deploying the HTML page, I opened the EC2 instance's public IPv4 address in a browser.
 
@@ -198,7 +198,7 @@ The successful webpage confirmed that:
 * Security Group rules were configured correctly
 * The website had been deployed successfully
 
-Website Successfully Hosted on EC2
+<h2>Website Successfully Hosted on EC2</h2>
 
 The screenshot below shows the final website running on the EC2 server.
 
@@ -206,18 +206,16 @@ The screenshot below shows the final website running on the EC2 server.
 
 ---
 
-Key Difference Between Amazon S3 and Amazon EC2
+<h2>Key Difference Between Amazon S3 and Amazon EC2</h2>
 
-One of the most valuable lessons from this project was understanding the difference between Amazon S3 and Amazon EC2.
-
-Amazon S3
+<b>Amazon S3</b>
 
 * Fully managed service
 * Static website hosting
 * No operating system management
 * No server administration
 
-Amazon EC2
+<b>Amazon EC2</b>
 
 * Full control over the operating system
 * Supports dynamic applications
@@ -228,7 +226,7 @@ This project gave me hands-on experience managing the infrastructure myself rath
 
 ---
 
-Project Architecture
+<h2>Project Architecture</h2>
 
 ```text
 Windows Laptop
@@ -248,7 +246,7 @@ Hosted Website
 
 ---
 
-What I Learned
+<h2>What I Learned</h2>
 
 Through this project, I gained practical experience with:
 
@@ -264,7 +262,7 @@ Through this project, I gained practical experience with:
 
 ---
 
-Project Outcome
+<h2>Project Outcome</h2>
 
 At the end of this project, I successfully:
 
@@ -279,7 +277,7 @@ This project provided my first real experience managing cloud infrastructure dir
 
 ---
 
-Conclusion
+<h2>Conclusion</h2>
 
 While my first AWS project focused on hosting a website using Amazon S3 and CloudFront, and my second project focused on securing AWS environments using IAM, this project introduced me to the compute layer of cloud computing.
 
