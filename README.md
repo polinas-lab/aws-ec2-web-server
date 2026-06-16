@@ -92,7 +92,7 @@ Security Group Configuration
 
 The screenshot below shows the Security Group and networking configuration.
 
-![Network Settings](EC2-screenshots/network_settings.png)
+![Network Settings](EC2-screenshots/network&sec_settings.png)
 
 What I Learned
 
