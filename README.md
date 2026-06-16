@@ -67,7 +67,7 @@ EC2 Instance Running
 
 The screenshot below shows my EC2 instance successfully launched and running.
 
-![EC2 Running](screenshots/instance-running.png)
+![EC2 Running](EC2-screenshots/instance-running.png)
 
 Why This Matters
 
@@ -92,7 +92,7 @@ Security Group Configuration
 
 The screenshot below shows the Security Group and networking configuration.
 
-![Network Settings](screenshots/network_settings.png)
+![Network Settings](EC2-screenshots/network_settings.png)
 
 What I Learned
 
@@ -114,7 +114,7 @@ SSH Connection Established
 
 The screenshot below shows the successful SSH connection to the EC2 instance.
 
-![SSH Connected](screenshots/ssh-connected.png)
+![SSH Connected](EC2-screenshots/ssh-connected.png)
 
 Why This Matters
 
@@ -134,7 +134,7 @@ After installation, I started the Apache service and configured it to start auto
 
 The screenshot below shows Apache successfully installed and running.
 
-![Apache Running](screenshots/apache-running.png)
+![Apache Running](EC2-screenshots/apache-running.png)
 
 Commands Used
 
@@ -171,7 +171,7 @@ This step transformed the EC2 instance from a Linux server into a functioning we
 
 The screenshot below shows the HTML file being created and added to the server.
 
-![HTML Added](screenshots/html_web_added.png)
+![HTML Added](EC2-screenshots/html_web_added.png)
 
 ### Website Source Code
 
@@ -202,7 +202,7 @@ Website Successfully Hosted on EC2
 
 The screenshot below shows the final website running on the EC2 server.
 
-![Website Live](screenshots/ec2-website-live.png)
+![Website Live](EC2-screenshots/ec2-website-live.png)
 
 ---
 
