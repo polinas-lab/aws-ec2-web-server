@@ -45,7 +45,7 @@ Amazon Linux Selection
 
 The screenshot below shows the Amazon Linux operating system selected during instance creation.
 
-![Amazon Linux Selected](screenshots/amazon-linux-selected.png)
+![Amazon Linux Selected](EC2-screenshots/amazon-linux-selected.png)
 
 What I Learned
 
