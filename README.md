@@ -178,7 +178,7 @@ The screenshot below shows the HTML file being created and added to the server.
 The HTML file used in this project can be found here:
 
 ```text
-website
+website/index.html
 ```
 
 ### What I Learned
